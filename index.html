@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save The Animals</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <style>
+    .carousel {
+      display: none;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- navigation code here -->
+  <header class="navigation">
+    <h1>Save The Animals</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Donate</a>
+      <a href="#">Our Team</a>
+    </nav>
+  </header>
+
+  <div class="container home">
+    <div class="background">
+      <img class="carousel" src="img/elephant-sunset.jpg" alt="Elephants at sunset">
+      <img class="carousel" src="img/rhino-family.jpg" alt="Rhino family">
+      <img class="carousel" src="img/tiger-closeup.jpg" alt="Tiger mom">
+    </div>
+
+    <script>
+      var index = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("carousel");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+          index = 1;
+        }
+        x[index-1].style.display = "block";
+        setTimeout(carousel, 2000);
+      }
+    </script>
+
+    <header class="intro">
+      <h2>Help Us Help Animals!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </header>
+
+    <section class="animals">
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>Copyright Save The Animals 2019</p>
+  </footer>
+
+</body>
+</html>
