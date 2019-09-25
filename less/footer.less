@@ -1,2 +1,40 @@
-.footer {
+.footer .copyright {
+    font-size: 1.6rem;
+    color: @footer-font;
+    background: @footer-bg;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    @media @tablet {
+        font-size: 1.2rem;
+    }
+
+    @media @mobile {
+        font-size: 1.1rem;
+    }
+
+    li {
+        display: inline-block;
+        border-left: 1px solid @footer-border;
+        padding-left: 1%;
+
+        &:first-child {
+            border-left: none;
+            padding-left: 0;
+            margin-right: 1%;
+        }
+    }
+
+    a {
+        color: @footer-font;
+        text-decoration: underline @footer-font double;
+
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+    }
 }
