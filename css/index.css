@@ -298,7 +298,7 @@ img {
     align-items: center;
   }
 }
-.home .btn {
+.home .button {
   padding: 2%;
   margin: 2%;
   width: 25%;
@@ -313,17 +313,17 @@ img {
   text-decoration: none;
   font-size: 16px;
 }
-.home .btn:hover {
+.home .button:hover {
   background: #F6F7F8;
   color: #007BA7;
 }
 @media (max-width: 800px) {
-  .home .btn {
+  .home .button {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 500px) {
-  .home .btn {
+  .home .button {
     font-size: 1.1rem;
   }
 }
